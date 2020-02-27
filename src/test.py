@@ -45,7 +45,6 @@ if __name__ == "__main__":
 
     pred=clf.predict( test_data  )
 
-    #print(metrics.classification_report(test_labels, pred , target_names=target_names ))
     print(metrics.classification_report(test_labels, pred  ))
     
     

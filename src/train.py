@@ -29,7 +29,7 @@ if __name__ == "__main__":
     parser.add_argument("--output_dir", dest="output_dir",
                         help="path to the output folder", required=True)
     #Parameters for calculation of features:
-    parser.add_argument("--vectorizer_type", dest="vectorizer_type", type=str , default='tfidf' , choices=[ 'tfidf', 'hashing'] , help="batch size used during training" , required=False ) 
+    parser.add_argument("--vectorizer_type", dest="vectorizer_type", type=str , default='tfidf' , choices=[ 'tfidf', 'hashing'] , help="vectorizer used for feature extraction" , required=False ) 
     parser.add_argument("--n_features", dest="n_features", type=int ,default=2**16,
                         help="nr of features when using the hashing vectorizer (ignored when tfidf is used", required=False)
     parser.add_argument("--language", dest="language", type=str , default='english' , help="language used by Vectorizer (i.e. stopwords)" , required=False )
